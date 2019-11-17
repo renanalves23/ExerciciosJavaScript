@@ -63,3 +63,25 @@ console.log(novoArray);
  console.log(`---------------------------------------`)
 
 
+     /* 4) Considere o objeto abaixo: */
+              var curso = {
+                'titulo': "Aprenda programação em Python",
+                'categoria': ['programação', 'tecnologia', 'python'],
+                'n_aval_5_estrelas': 420,
+                'n_aval_4_estrelas': 80,
+                'n_aval_3_estrelas': 33,
+                'n_aval_2_estrelas': 20,
+                'n_aval_1_estrela': 4
+            };
+        /*
+         a) A categoria principal do curso é o primeiro elemento da lista associada à chave 'categoria'.
+           Solte esta categoria abaixo, no span que tem id "categoria_principal"
+               
+        */
+
+ console.log(`-----------------Quarto Exercício----------------------`)
+              document.getElementById("categoria_principal").innerText = curso.categoria[0]
+
+
+ console.log(`---------------------------------------`)
+
