@@ -54,7 +54,11 @@ console.log(`---------------------------------------`)
 
 const novoArray = grupos.slice(1,3); 
 console.log(novoArray)
+console.log(`----------------segunda parte -----------------------`)
 
+novoArray.push(["Mariana", "Felipe", "Carla"])
+
+console.log(novoArray);
 
  console.log(`---------------------------------------`)
 
