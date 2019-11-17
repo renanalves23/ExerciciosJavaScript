@@ -24,17 +24,31 @@ console.log(`---------------------------------------`)
 
 */
 
+console.log(`----------Segundo exercício----------------`)
+
 const grausCelcius = parseFloat(document.getElementById("caixa_azul").innerHTML)
 
-function CelToFar(cel,far) {
-
+function CelToFar(cel) {
+   let far = (cel * 9 / 5) + 32;
+   
+   return document.getElementById("caixa_amarela").innerHTML = far
+   
 };
 
-
+console.log(CelToFar(grausCelcius));
 
 console.log(`---------------------------------------`)
-console.log(`---------------------------------------`)
 
 
+          /* 3) Forme um novo array composto pelos 2 últimos elementos do array abaixo.
+           Em seguida adicione ao final do novo array mais um grupo composto
+            pelos alunos "Mariana", "Felipe" e "Carla". */
+
+ console.log(`--------------Terceiro Exercício-------------------------`)
+
+
+
+
+ console.log(`---------------------------------------`)
 
 
