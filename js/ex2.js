@@ -108,3 +108,38 @@ console.log(novoArray);
 
  console.log(`---------------------------------------`)
 
+
+
+ console.log(`---------------Quinto Exercício------------------------`)
+
+      const pessoa = {
+        'nome': 'Renan',
+        'sobrenome': 'Alves',
+        'email': 'renanalvescontato@yahoo.com'
+      };
+
+      function criar_tabela(person) {
+        let tabelaHTML = '<div class="tableBox">'; //const não resultou no esperado ...let ou var consegui fazer funcionar
+        tabelaHTML += '<table>';
+        tabelaHTML +=     '<tr>';
+        tabelaHTML +=         '<th>Nome Completo</th>';
+        tabelaHTML +=         '<th>Email</th>';
+        tabelaHTML +=     '</tr>';
+        tabelaHTML +=     '<tr>';
+        tabelaHTML +=         '<td>' + person.nome + ' ' + person.sobrenome + '</td>';
+        tabelaHTML +=         '<td>' + person.email + '</td>';
+        tabelaHTML +=       '</tr>'; 
+        tabelaHTML +=   '</table';
+        tabelaHTML +='</div>';
+
+        return tabelaHTML;
+
+
+      };
+
+      const tabela = criar_tabela(pessoa);
+
+      document.getElementById("tabela").innerHTML = tabela;
+
+
+ console.log(`---------------------------------------`)
