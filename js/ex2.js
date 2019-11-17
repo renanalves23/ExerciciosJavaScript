@@ -46,7 +46,14 @@ console.log(`---------------------------------------`)
 
  console.log(`--------------Terceiro Exercício-------------------------`)
 
+ var grupos = [ 
+  [ "João" , "Maria" ],
+  [ "Pedro" , "Joana", "André", "Júlio" ],
+  [ "Carolina" , "Helena", "Marcelo" ]
+]; 
 
+const novoArray = grupos.slice(1,3); 
+console.log(novoArray)
 
 
  console.log(`---------------------------------------`)
