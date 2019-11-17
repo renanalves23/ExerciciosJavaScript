@@ -71,7 +71,12 @@ console.log(novoArray);
                 'n_aval_4_estrelas': 80,
                 'n_aval_3_estrelas': 33,
                 'n_aval_2_estrelas': 20,
-                'n_aval_1_estrela': 4
+                'n_aval_1_estrela': 4,
+                'total_aval': function () {
+                  let t_aval = 'n_aval_5_estrelas' + 'n_aval_4_estrelas' + 'n_aval_3_estrelas' + 'n_aval_2_estrelas' + 'n_aval_1_estrela';
+                  return t_aval;
+                },
+                
             };
         /*
          a) A categoria principal do curso é o primeiro elemento da lista associada à chave 'categoria'.
@@ -80,7 +85,7 @@ console.log(novoArray);
         */
 
  console.log(`-----------------Quarto Exercício----------------------`)
-              document.getElementById("categoria_principal").innerHTML = curso.categoria[0]
+       document.getElementById("categoria_principal").innerHTML = curso.categoria[0]
 
 
              /* b) As propriedades n_aval... representam a quantidade de avaliações do curso, de 1 até 5 estrelas. 
@@ -88,6 +93,7 @@ console.log(novoArray);
              tem o curso (exemplo: 4.5). Depois utilize-os para soltar estas informações nas caixas abaixo, que tem os ids 
              "total_aval" e "media_aval". */
              
+        
 
  console.log(`---------------------------------------`)
 
