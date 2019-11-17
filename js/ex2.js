@@ -10,7 +10,7 @@ const num2 = parseFloat(document.getElementById("num_2").innerHTML)
 
 const soma = num1 + num2
 
-const result = document.getElementById("resultado").innerHTML = soma;
+const result = document.getElementById("resultado").innerHTML = "<strong>" + soma + "</strong>";
 console.log(`---------------------------------------`)
 console.log(`primeiro exercício`)
 console.log(result);
@@ -31,7 +31,7 @@ const grausCelcius = parseFloat(document.getElementById("caixa_azul").innerHTML)
 function CelToFar(cel) {
    let far = (cel * 9 / 5) + 32;
    
-   return document.getElementById("caixa_amarela").innerHTML = far
+   return document.getElementById("caixa_amarela").innerHTML = "<strong>" + far + "</strong>"
    
 };
 
@@ -80,8 +80,14 @@ console.log(novoArray);
         */
 
  console.log(`-----------------Quarto Exercício----------------------`)
-              document.getElementById("categoria_principal").innerText = curso.categoria[0]
+              document.getElementById("categoria_principal").innerHTML = curso.categoria[0]
 
+
+             /* b) As propriedades n_aval... representam a quantidade de avaliações do curso, de 1 até 5 estrelas. 
+             Crie dois métodos: um para retornar o total de avaliações do curso e um para retornar a média de estrelas que 
+             tem o curso (exemplo: 4.5). Depois utilize-os para soltar estas informações nas caixas abaixo, que tem os ids 
+             "total_aval" e "media_aval". */
+             
 
  console.log(`---------------------------------------`)
 
